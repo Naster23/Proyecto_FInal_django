@@ -1,1 +1,7 @@
-A tu maldita madre! unu
+<<<<<<< HEAD
+A tu maldita madre! uwu
+La tuya q se me abre ! (●'◡'●) unu
+=======
+A tu maldita madre! uwu
+La tuya q se me abre ! (●'◡'●)
+>>>>>>> 97356858ac54bfa12c632ac5239e2f4529433a7d
