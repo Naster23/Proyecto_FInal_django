@@ -343,51 +343,6 @@
                                     </p>
                                 </a>
                             </li>
-
-                            <li class="nav-item">
-                                {% url 'staff_add_result' as staff_add_result %}
-                                <a href="{{staff_add_result}}"
-                                    class="nav-link {% if staff_add_result == request.path %} active {% endif %}">
-                                    <i class="nav-icon fas fa-poll"></i>
-                                    <p>
-                                        Añadir resultado
-
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                {% url 'edit_student_result' as edit_student_result %}
-                                <a href="{{edit_student_result}}"
-                                    class="nav-link {% if edit_student_result == request.path %} active {% endif %}">
-                                    <i class="nav-icon fas fa-th"></i>
-                                    <p>
-                                        Editar resultado
-
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                {% url 'staff_take_attendance' as staff_take_attendance %}
-                                <a href="{{staff_take_attendance}}"
-                                    class="nav-link {% if staff_take_attendance == request.path %} active {% endif %}">
-                                    <i class="nav-icon fas fa-calendar-alt"></i>
-                                    <p>
-                                        Tomar asistencia
-
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                {% url 'staff_update_attendance' as staff_update_attendance %}
-                                <a href="{{staff_update_attendance}}"
-                                    class="nav-link {% if staff_update_attendance == request.path %} active {% endif %}">
-                                    <i class="nav-icon fas fa-th"></i>
-                                    <p>
-                                        Ver/Actualizar Asistencias
-
-                                    </p>
-                                </a>
-                            </li>
                             <li class="nav-item">
                                 {% url 'staff_view_notification' as staff_view_notification %}
                                 <a href="{{staff_view_notification}}"
@@ -399,19 +354,7 @@
                                     </p>
                                 </a>
                             </li>
-
-                            <li class="nav-item">
-                                {% url 'staff_apply_leave' as staff_apply_leave %}
-                                <a href="{{staff_apply_leave}}"
-                                    class="nav-link {% if staff_apply_leave == request.path %} active {% endif %}">
-                                    <i class="nav-icon fas fa-check"></i>
-                                    <p>
-                                        Aplicar para licencia
-
-                                    </p>
-                                </a>
-                            </li>
-
+ 
                             <li class="nav-item">
                                 {% url 'staff_feedback' as staff_feedback %}
                                 <a href="{{staff_feedback}}"
