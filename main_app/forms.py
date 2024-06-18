@@ -14,15 +14,15 @@ class FormSettings(forms.ModelForm):
 
 class CustomUserForm(FormSettings):
     email = forms.EmailField(required=True)
-    gender = forms.ChoiceField(choices=[('M', 'Male'), ('F', 'Female')])
-    first_name = forms.CharField(required=True)
-    last_name = forms.CharField(required=True)
-    address = forms.CharField(widget=forms.Textarea)
-    password = forms.CharField(widget=forms.PasswordInput)
+    Genero = forms.ChoiceField(choices=[('H', 'Hombre'), ('M', 'Mujer')])
+    Nombre = forms.CharField(required=True)
+    Apellido = forms.CharField(required=True)
+    Direccion = forms.CharField(widget=forms.Textarea)
+    Contraseña = forms.CharField(widget=forms.PasswordInput)
     widget = {
         'password': forms.PasswordInput(),
     }
-    profile_pic = forms.ImageField()
+    Foto_de_perfil = forms.ImageField()
 
     def __init__(self, *args, **kwargs):
         super(CustomUserForm, self).__init__(*args, **kwargs)
@@ -52,7 +52,7 @@ class CustomUserForm(FormSettings):
 
     class Meta:
         model = CustomUser
-        fields = ['first_name', 'last_name', 'email', 'gender',  'password','profile_pic', 'address' ]
+        fields = ['Nombre', 'Apellido', 'email', 'Genero',  'Contraseña','Foto_de_perfil', 'Direccion' ]
 
 
 class StudentForm(CustomUserForm):
@@ -62,7 +62,7 @@ class StudentForm(CustomUserForm):
     class Meta(CustomUserForm.Meta):
         model = Student
         fields = CustomUserForm.Meta.fields + \
-            ['course', 'session']
+            ['deporte', 'fecha']
 
 
 class AdminForm(CustomUserForm):
